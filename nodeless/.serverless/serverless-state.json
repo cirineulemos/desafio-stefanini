@@ -1,8 +1,8 @@
 {
   "service": {
-    "service": "nodeless",
+    "service": "desafio-stefanini",
     "serviceObject": {
-      "name": "nodeless"
+      "name": "desafio-stefanini"
     },
     "provider": {
       "name": "aws",
@@ -98,7 +98,7 @@
           "FuncionariosLogGroup": {
             "Type": "AWS::Logs::LogGroup",
             "Properties": {
-              "LogGroupName": "/aws/lambda/nodeless-dev-funcionarios"
+              "LogGroupName": "/aws/lambda/desafio-stefanini-dev-funcionarios"
             }
           },
           "IamRoleLambdaExecution": {
@@ -126,7 +126,7 @@
                     "Fn::Join": [
                       "-",
                       [
-                        "nodeless",
+                        "desafio-stefanini",
                         "dev",
                         "lambda"
                       ]
@@ -143,7 +143,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nodeless-dev*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/desafio-stefanini-dev*:*"
                           }
                         ]
                       },
@@ -154,7 +154,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/nodeless-dev*:*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/desafio-stefanini-dev*:*:*"
                           }
                         ]
                       },
@@ -170,7 +170,7 @@
                 "Fn::Join": [
                   "-",
                   [
-                    "nodeless",
+                    "desafio-stefanini",
                     "dev",
                     {
                       "Ref": "AWS::Region"
@@ -188,11 +188,11 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/nodeless/dev/1625712073893-2021-07-08T02:41:13.893Z/nodeless.zip"
+                "S3Key": "serverless/desafio-stefanini/dev/1625755556839-2021-07-08T14:45:56.839Z/desafio-stefanini.zip"
               },
               "Handler": "funcionarios.cadastro",
               "Runtime": "nodejs12.x",
-              "FunctionName": "nodeless-dev-funcionarios",
+              "FunctionName": "desafio-stefanini-dev-funcionarios",
               "MemorySize": 256,
               "Timeout": 6,
               "Environment": {
@@ -211,14 +211,14 @@
               "FuncionariosLogGroup"
             ]
           },
-          "FuncionariosLambdaVersion6DOUJ9cN1nRolonF0yqN7J1Ug4NtpWJRAurG97Kvgi4": {
+          "FuncionariosLambdaVersionTbqgtXE3JVCstapbkj8F0jlcrwzWomzdWmLqyOCRMY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "FuncionariosLambdaFunction"
               },
-              "CodeSha256": "0ovcKRbsjNI/J5WHnhcROFSmwsQHbvdLuMRBgR11Djo="
+              "CodeSha256": "KhdvyjjEj9ltcZGxtTP7G1ZgVjKrB4kYai9qQhhGO18="
             }
           },
           "S3BucketServeless": {
@@ -316,16 +316,16 @@
               "Ref": "ServerlessDeploymentBucket"
             },
             "Export": {
-              "Name": "sls-nodeless-dev-ServerlessDeploymentBucketName"
+              "Name": "sls-desafio-stefanini-dev-ServerlessDeploymentBucketName"
             }
           },
           "FuncionariosLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "FuncionariosLambdaVersion6DOUJ9cN1nRolonF0yqN7J1Ug4NtpWJRAurG97Kvgi4"
+              "Ref": "FuncionariosLambdaVersionTbqgtXE3JVCstapbkj8F0jlcrwzWomzdWmLqyOCRMY"
             },
             "Export": {
-              "Name": "sls-nodeless-dev-FuncionariosLambdaFunctionQualifiedArn"
+              "Name": "sls-desafio-stefanini-dev-FuncionariosLambdaFunctionQualifiedArn"
             }
           }
         }
@@ -451,13 +451,13 @@
             }
           }
         ],
-        "name": "nodeless-dev-funcionarios",
+        "name": "desafio-stefanini-dev-funcionarios",
         "package": {},
         "memory": 256,
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "FuncionariosLambdaVersion6DOUJ9cN1nRolonF0yqN7J1Ug4NtpWJRAurG97Kvgi4"
+        "versionLogicalId": "FuncionariosLambdaVersionTbqgtXE3JVCstapbkj8F0jlcrwzWomzdWmLqyOCRMY"
       }
     },
     "configValidationMode": "warn",
@@ -476,10 +476,10 @@
     },
     "layers": {},
     "isDashboardMonitoringPreconfigured": false,
-    "artifact": "C:\\Users\\Cirineu\\OneDrive\\Documentos\\Code\\Projeto - Desafio Stefanini\\nodeless\\.serverless\\nodeless.zip"
+    "artifact": "C:\\Fontes\\Ciri\\desafio-stefanini\\nodeless\\.serverless\\desafio-stefanini.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/nodeless/dev/1625712073893-2021-07-08T02:41:13.893Z",
-    "artifact": "nodeless.zip"
+    "artifactDirectoryName": "serverless/desafio-stefanini/dev/1625755556839-2021-07-08T14:45:56.839Z",
+    "artifact": "desafio-stefanini.zip"
   }
 }
