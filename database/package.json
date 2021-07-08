@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Cirineu Simião Lemos",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
