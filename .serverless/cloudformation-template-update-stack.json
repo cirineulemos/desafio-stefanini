@@ -193,9 +193,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/desafio-stefanini/dev/1625796326369-2021-07-09T02:05:26.369Z/desafio-stefanini.zip"
+          "S3Key": "serverless/desafio-stefanini/dev/1625831690762-2021-07-09T11:54:50.762Z/desafio-stefanini.zip"
         },
-        "Handler": "functions/funcionarios.listFunc",
+        "Handler": "funcionarios.listFunc",
         "Runtime": "nodejs12.x",
         "FunctionName": "desafio-stefanini-dev-listFunc",
         "MemorySize": 256,
@@ -219,9 +219,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/desafio-stefanini/dev/1625796326369-2021-07-09T02:05:26.369Z/desafio-stefanini.zip"
+          "S3Key": "serverless/desafio-stefanini/dev/1625831690762-2021-07-09T11:54:50.762Z/desafio-stefanini.zip"
         },
-        "Handler": "functions/funcionarios.selectFunc",
+        "Handler": "funcionarios.selectFunc",
         "Runtime": "nodejs12.x",
         "FunctionName": "desafio-stefanini-dev-selectFunc",
         "MemorySize": 256,
@@ -245,9 +245,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/desafio-stefanini/dev/1625796326369-2021-07-09T02:05:26.369Z/desafio-stefanini.zip"
+          "S3Key": "serverless/desafio-stefanini/dev/1625831690762-2021-07-09T11:54:50.762Z/desafio-stefanini.zip"
         },
-        "Handler": "functions/funcionarios.addFunc",
+        "Handler": "funcionarios.addFunc",
         "Runtime": "nodejs12.x",
         "FunctionName": "desafio-stefanini-dev-addFunc",
         "MemorySize": 256,
@@ -271,9 +271,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/desafio-stefanini/dev/1625796326369-2021-07-09T02:05:26.369Z/desafio-stefanini.zip"
+          "S3Key": "serverless/desafio-stefanini/dev/1625831690762-2021-07-09T11:54:50.762Z/desafio-stefanini.zip"
         },
-        "Handler": "functions/funcionarios.editFunc",
+        "Handler": "funcionarios.editFunc",
         "Runtime": "nodejs12.x",
         "FunctionName": "desafio-stefanini-dev-editFunc",
         "MemorySize": 256,
@@ -297,9 +297,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/desafio-stefanini/dev/1625796326369-2021-07-09T02:05:26.369Z/desafio-stefanini.zip"
+          "S3Key": "serverless/desafio-stefanini/dev/1625831690762-2021-07-09T11:54:50.762Z/desafio-stefanini.zip"
         },
-        "Handler": "functions/funcionarios.deleteFunc",
+        "Handler": "funcionarios.deleteFunc",
         "Runtime": "nodejs12.x",
         "FunctionName": "desafio-stefanini-dev-deleteFunc",
         "MemorySize": 256,
@@ -316,58 +316,58 @@
         "DeleteFuncLogGroup"
       ]
     },
-    "ListFuncLambdaVersionk1anhmrkMf2lSRDaznnxILWmjfpStI0H6NqrBWVOs": {
+    "ListFuncLambdaVersionPGZEBVc3ZZqkJI5r6aziBvDcO1QaXj3kyzlJ8gY4Ps": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListFuncLambdaFunction"
         },
-        "CodeSha256": "yOtDjSPPZ2F67hNNehvMjUf0aPrDsjGefGEUzmbK4iQ=",
+        "CodeSha256": "dnptLoOm1d3NkVeyI/+Utp9g1TE0lrhNPs58ZNlnDSI=",
         "Description": "List all Employee"
       }
     },
-    "SelectFuncLambdaVersion6i3yQaAgIVNyaYjBqL5NBXjA7yu9Y1ugT5voqEmN4NY": {
+    "SelectFuncLambdaVersionhkbYhinFyddQux2Cvf0kIMiOp2zecbGrQzWEb44R6o": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SelectFuncLambdaFunction"
         },
-        "CodeSha256": "yOtDjSPPZ2F67hNNehvMjUf0aPrDsjGefGEUzmbK4iQ=",
+        "CodeSha256": "dnptLoOm1d3NkVeyI/+Utp9g1TE0lrhNPs58ZNlnDSI=",
         "Description": "Select one Employee"
       }
     },
-    "AddFuncLambdaVersionDujsxpZZJVc9sfWBQx05KClxTa95jIEv4yFxpoSbB6E": {
+    "AddFuncLambdaVersionmFpJ8qppvG2QPTj6cv0IAgIzlJRjCczhH9mJ75sdOE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AddFuncLambdaFunction"
         },
-        "CodeSha256": "yOtDjSPPZ2F67hNNehvMjUf0aPrDsjGefGEUzmbK4iQ=",
+        "CodeSha256": "dnptLoOm1d3NkVeyI/+Utp9g1TE0lrhNPs58ZNlnDSI=",
         "Description": "Create a new Employee"
       }
     },
-    "EditFuncLambdaVersionQsFWRO4ORnaBFUYgooDL7YS2qOiIpKZiTxGsbEaM98": {
+    "EditFuncLambdaVersionoGCxCHOoqXsIxcinw3FX3tVeENMo8K8uFpocLsL4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "EditFuncLambdaFunction"
         },
-        "CodeSha256": "yOtDjSPPZ2F67hNNehvMjUf0aPrDsjGefGEUzmbK4iQ=",
+        "CodeSha256": "dnptLoOm1d3NkVeyI/+Utp9g1TE0lrhNPs58ZNlnDSI=",
         "Description": "Edit Employee"
       }
     },
-    "DeleteFuncLambdaVersionT5Rd4gAyppz3j5htqEsEIzMU1Yb9FdbfAUNlBGAk": {
+    "DeleteFuncLambdaVersionPpJxcxRMGrPq3CH4kpxjRfpq0GcJgm2eG95e4oih5A": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteFuncLambdaFunction"
         },
-        "CodeSha256": "yOtDjSPPZ2F67hNNehvMjUf0aPrDsjGefGEUzmbK4iQ=",
+        "CodeSha256": "dnptLoOm1d3NkVeyI/+Utp9g1TE0lrhNPs58ZNlnDSI=",
         "Description": "Select one Employee"
       }
     },
@@ -913,7 +913,7 @@
         "DeleteFuncLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1625796317025": {
+    "ApiGatewayDeployment1625831683451": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1132,7 +1132,7 @@
     "ListFuncLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListFuncLambdaVersionk1anhmrkMf2lSRDaznnxILWmjfpStI0H6NqrBWVOs"
+        "Ref": "ListFuncLambdaVersionPGZEBVc3ZZqkJI5r6aziBvDcO1QaXj3kyzlJ8gY4Ps"
       },
       "Export": {
         "Name": "sls-desafio-stefanini-dev-ListFuncLambdaFunctionQualifiedArn"
@@ -1141,7 +1141,7 @@
     "SelectFuncLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SelectFuncLambdaVersion6i3yQaAgIVNyaYjBqL5NBXjA7yu9Y1ugT5voqEmN4NY"
+        "Ref": "SelectFuncLambdaVersionhkbYhinFyddQux2Cvf0kIMiOp2zecbGrQzWEb44R6o"
       },
       "Export": {
         "Name": "sls-desafio-stefanini-dev-SelectFuncLambdaFunctionQualifiedArn"
@@ -1150,7 +1150,7 @@
     "AddFuncLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AddFuncLambdaVersionDujsxpZZJVc9sfWBQx05KClxTa95jIEv4yFxpoSbB6E"
+        "Ref": "AddFuncLambdaVersionmFpJ8qppvG2QPTj6cv0IAgIzlJRjCczhH9mJ75sdOE"
       },
       "Export": {
         "Name": "sls-desafio-stefanini-dev-AddFuncLambdaFunctionQualifiedArn"
@@ -1159,7 +1159,7 @@
     "EditFuncLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "EditFuncLambdaVersionQsFWRO4ORnaBFUYgooDL7YS2qOiIpKZiTxGsbEaM98"
+        "Ref": "EditFuncLambdaVersionoGCxCHOoqXsIxcinw3FX3tVeENMo8K8uFpocLsL4"
       },
       "Export": {
         "Name": "sls-desafio-stefanini-dev-EditFuncLambdaFunctionQualifiedArn"
@@ -1168,7 +1168,7 @@
     "DeleteFuncLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteFuncLambdaVersionT5Rd4gAyppz3j5htqEsEIzMU1Yb9FdbfAUNlBGAk"
+        "Ref": "DeleteFuncLambdaVersionPpJxcxRMGrPq3CH4kpxjRfpq0GcJgm2eG95e4oih5A"
       },
       "Export": {
         "Name": "sls-desafio-stefanini-dev-DeleteFuncLambdaFunctionQualifiedArn"
