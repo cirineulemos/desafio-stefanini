@@ -18,7 +18,7 @@ provider:
 
 functions:
   listFunc:
-    handler: functions/funcionarios.listFunc
+    handler: funcionarios.listFunc
     description: List all Employee
     events:
       - http:
@@ -26,7 +26,7 @@ functions:
           path: listFunc
           cors: true
   selectFunc:
-    handler: functions/funcionarios.selectFunc
+    handler: funcionarios.selectFunc
     description: Select one Employee
     events:
       - http:
@@ -34,7 +34,7 @@ functions:
           path: selectFunc
           cors: true
   addFunc:
-    handler: functions/funcionarios.addFunc
+    handler: funcionarios.addFunc
     description: Create a new Employee
     events:
       - http:
@@ -42,7 +42,7 @@ functions:
           path: addFunc
           cors: true
   editFunc:
-    handler: functions/funcionarios.editFunc
+    handler: funcionarios.editFunc
     description: Edit Employee
     events:
       - http:
@@ -50,7 +50,7 @@ functions:
           path: editFunc
           cors: true
   deleteFunc:
-    handler: functions/funcionarios.deleteFunc
+    handler: funcionarios.deleteFunc
     description: Select one Employee
     events:
       - http:

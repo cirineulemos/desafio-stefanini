@@ -1,14 +1,10 @@
 {
-  "name": "desafio",
+  "name": "desafio-mysql",
   "version": "1.0.0",
   "description": "Desafio Steffanini",
   "main": "index.js",
   "scripts": {
-    "test": "dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "desafio-stefanini"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cirineu Simião Lemos",
   "license": "ISC",
