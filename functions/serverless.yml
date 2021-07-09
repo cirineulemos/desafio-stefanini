@@ -1,0 +1,59 @@
+service: desafio-stefanini
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  region: sa-east-1
+  memorySize: 256
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:GetObject
+        - s3:PutObject
+      Resource:
+        - "arn:aws:s3:::*"
+
+functions:
+  listFunc:
+    handler: functions/funcionarios.listFunc
+    description: List all Employee
+    events:
+      - http:
+          method: get
+          path: listFunc
+          cors: true
+  selectFunc:
+    handler: functions/funcionarios.selectFunc
+    description: Select one Employee
+    events:
+      - http:
+          method: get
+          path: selectFunc
+          cors: true
+  addFunc:
+    handler: functions/funcionarios.addFunc
+    description: Create a new Employee
+    events:
+      - http:
+          method: post
+          path: addFunc
+          cors: true
+  editFunc:
+    handler: functions/funcionarios.editFunc
+    description: Edit Employee
+    events:
+      - http:
+          method: get
+          path: editFunc
+          cors: true
+  deleteFunc:
+    handler: functions/funcionarios.deleteFunc
+    description: Select one Employee
+    events:
+      - http:
+          method: delete
+          path: deleteFunc
+          cors: true
