@@ -34,7 +34,7 @@ exports.selectFunc = (event, context, callback) => {
 
 exports.addFunc = (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false;
-  const sql = "SELECT * FROM TB_FUNCIONARIOS";
+  const sql = "INSERT INTO TB_FUNCIONARIOS (ID_FUNC, IDADE_FUNC, NOME_FUNC, CARGO_FUNC) VALUES (" + event.id_func +"," + event.idade_func + "," + event.nome_func + "," + event.cargo_func +")";
   con.query(sql, function (err, result) {
     if (err) throw err;
     callback(null, result)
@@ -42,7 +42,7 @@ exports.addFunc = (event, context, callback) => {
 };
 exports.editFunc = (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false;
-  const sql = "SELECT * FROM TB_FUNCIONARIOS";
+  const sql = "UPDATE TB_FUNCIONARIOS SET IDADE_FUNC = "+ event.idade_func + ", NOME_FUNC = " + event.nome_func + ", CARGO_FUNC = " + event.cargo_func + " WHERE ID_FUNC = " + event.id_func;
   con.query(sql, function (err, result) {
     if (err) throw err;
     callback(null, result)
@@ -50,7 +50,7 @@ exports.editFunc = (event, context, callback) => {
 };
 exports.deleteFunc = (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false;
-  const sql = "SELECT * FROM TB_FUNCIONARIOS";
+  const sql = "DELETE FROM TB_FUNCIONARIOS WHERE ID_FUNC = " + event.id_func;
   con.query(sql, function (err, result) {
     if (err) throw err;
     callback(null, result)
